@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <main>
+      <p id="sub">Let us know how we can improve freeCodeCamp</p>
+      <form action="#">
+
+        <div class="test">
+          <label class="left" for="name">* Name:</label>
+          <input class="right txtinp" type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+
+      <div class="test">
+        <label class="left" for="email">* Email:</label>
+        <input class="right txtinp" type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="test">
+        <label class="left" for="age">* Age:</label>
+        <input class="right txtinp" type="number" id="age" name="age" placeholder="Age" required>
+    </div>
+
+      <div class="test">
+        <label for="select-1" class="left">Which option best describes your current role?</label>
+        <select id="select-1" class="right select">
+          <option value="" class="opt" disabled>Select an option</option>
+          <option value="student" class="opt">Student</option>
+          <option value="full-time-job" class="opt">Full time job</option>
+          <option value="full-time-learner" class="opt">Full time learner</option>
+          <option value="prefer-not-to-say" class="opt">Prefer no to say</option>
+          <option value="other" class="opt">Other</option>
+        </select>
+        </div>
+
+        <div class="test">
+          <p class="left">* How likely is that you would recommend freeCodeCamp to a friend?</p>
+          <ul>
+          <li><input type="radio" class="right" name="recommend" value="definitely" id="definitely" required><label for="definitely">Definitely</label></li>
+          <li><input type="radio" class="right" name="recommend" value="maybe" id="maybe"><label for="maybe">Maybe</label></li>
+          <li><input type="radio" class="right" name="recommend" value="not-sure" id="not-sure"><label for="not-sure">Not sure</label></li>
+    </ul>
+    </div>
+
+    <div class="test">
+        <label for="select-2" class="left">What do you like most in FCC:</label>
+          <select id="select-2" class="right select">
+            <option value="" class="opt" disabled>Select an option</option>
+            <option value="challenges" class="opt">Challenges</option>
+            <option value="community" class="opt">Community</option>
+            <option value="projects" class="opt">Projects</option>
+            <option value="open-source" class="opt">Open source</option>
+          </select>
+      </div>
+
+      <div class="test">
+        <p class="left">Things that should be improved in the future (Check all that apply):</p>
+        <ul>
+          <li><input type="checkbox" class="right" name="frontend-projects" value="frontend-projects" id="frontend-projects"><label class="right" for="frontend-projects">Front-end Projects</label></li>
+          <li><input type="checkbox" class="right" name="backend-projects" value="backend-projects" id="backend-projects"><label class="right" for="backend-projects">Back-end Projects</label></li>
+          <li><input type="checkbox" class="right" name="challenges" value="challenges" id="challenges"><label class="right" for="challenges">Challenges</label></li>
+          <li><input type="checkbox" class="right" name="open-source-community" value="open-source-community" id="open-source-community"><label class="right" for="open-source-community">Open Source Community</label></li>
+          <li><input type="checkbox" class="right" name="gitter-helprooms" value="gitter-helprooms" id="gitter-helprooms"><label class="right" for="gitter-helprooms">Gitter help rooms</label></li>
+          <li><input type="checkbox" class="right" name="videos" value="videos" id="videos"><label class="right" for="videos">Videos</label></li>
+          <li><input type="checkbox" class="right" name="city-meetups" value="city-meetups" id="city-meetups"><label class="right" for="city-meetups">City Meetups</label></li>
+          <li><input type="checkbox" class="right" name="wiki" value="wiki" id="wiki"><label class="right" for="wiki">Wiki</label></li>
+          <li><input type="checkbox" class="right" name="forum" value="forum" id="forum"><label class="right" for="forum">Forum</label></li>
+          <li><input type="checkbox" class="right" name="additional-courses" value="additional-courses" id="additional-courses"><label class="right" for="additional-courses">Additional Courses</label></li>
+    </ul>
+    </div>
+
+    <div class="test">
+        <label  for="textarea" class="left">Any Comments or Suggestions?</label>
+        <textarea id="textarea" class="right" placeholder="Enter your comment here..." rows="5" cols="1"></textarea>
+      </div>
+
+         <input type="submit" name="submit" value="Submit" id="submit">
+      </form>
+    </main>
+  </body>
+</html>
